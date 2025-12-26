@@ -1,4 +1,4 @@
-### Q1: Nested Array to Categorized Object (10 mins)
+### Q1: Nested Array to Categorized Object
 
 Convert a nested array of products into an object grouped by category and sorted by price within each category.
 
