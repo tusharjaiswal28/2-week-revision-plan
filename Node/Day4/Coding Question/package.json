@@ -1,0 +1,16 @@
+{
+  "name": "coding-question",
+  "version": "1.0.0",
+  "description": "Create a rate limiting middleware that limits API requests per IP address (e.g., 10 requests per minute). Store request counts in memory. Return appropriate error when limit is exceeded. Include a reset mechanism.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
