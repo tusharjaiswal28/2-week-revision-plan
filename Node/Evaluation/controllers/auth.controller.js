@@ -4,7 +4,7 @@ const ApiKey = require("../models/ApiKey");
 exports.generateApiKey = async (req, res) => {
     const { email } = req.body;
 
-    if (!email || !email.include("@")) {
+    if (!email || !email.includes("@")) {
         return res.status(400).json({
             success: false,
             message: "Invalid email format"
@@ -24,7 +24,7 @@ exports.generateApiKey = async (req, res) => {
 
     const newKey = await ApiKey.create({ email, apiKey });
 
-    req.status(201).json({
+    res.status(201).json({
         success: true,
         message: "API key generated successfully",
         data:{
