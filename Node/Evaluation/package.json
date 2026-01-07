@@ -1,0 +1,18 @@
+{
+  "name": "evaluation",
+  "version": "1.0.0",
+  "description": "Build a secure REST API for a Task Manager application using Node.js and Express. The API should have protected endpoints that require API key authentication passed via query parameters.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^8.21.0"
+  }
+}
