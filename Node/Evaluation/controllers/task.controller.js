@@ -36,3 +36,33 @@ exports.getTask = async(req,res)=>{
     }
 };
 
+exports.createTask = async (req, res) => {
+  const task = await Task.create(req.body);
+
+  res.status(201).json({
+    success: true,
+    message: "Task created successfully",
+    data: task
+  });
+};
+
+exports.updateTask = async (req, res) => {
+    
+};
+
+
+exports.deleteTask = async (req, res) => {
+  const task = await Task.findByIdAndDelete(req.params.id);
+
+  if (!task) {
+    return res.status(404).json({
+      success: false,
+      message: "Task not found"
+    });
+  }
+
+  res.json({
+    success: true,
+    message: "Task deleted successfully"
+  });
+};
