@@ -4,7 +4,7 @@ ANS-> Database scaling is the process of increasing a database’s capacity to h
 
 Vertical Scaling (Scale Up): Increase power of one machine by adding more CPU, RAM, or storage to a single server, it is simple to implement and limited by hardware.
 
-Horizontal Scaling (Scale Out): Add more database nodes, distributes load and More complex but highly 
+Horizontal Scaling (Scale Out): Add more database nodes, distributes load and More complex but highly scalable.
 
 
 
